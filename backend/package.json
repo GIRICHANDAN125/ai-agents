@@ -1,0 +1,50 @@
+{
+  "name": "nexus-backend",
+  "version": "1.0.0",
+  "description": "NEXUS Autonomous Multi-Agent Investment Intelligence Operating System - Backend",
+  "main": "dist/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/server.js",
+    "lint": "eslint src --ext .ts"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "@langchain/core": "^0.3.17",
+    "@langchain/google-genai": "^0.1.4",
+    "@langchain/langgraph": "^0.2.19",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "express-rate-limit": "^7.4.1",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "lowdb": "^7.0.1",
+    "morgan": "^1.10.0",
+    "node-cache": "^5.1.2",
+    "pdfkit": "^0.15.0",
+    "uuid": "^9.0.1",
+    "winston": "^3.15.0",
+    "ws": "^8.18.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/jsonwebtoken": "^9.0.7",
+    "@types/morgan": "^1.9.9",
+    "@types/node": "^20.17.6",
+    "@types/pdfkit": "^0.13.4",
+    "@types/uuid": "^9.0.8",
+    "@types/ws": "^8.5.12",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.6.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
